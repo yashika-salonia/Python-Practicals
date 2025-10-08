@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Web View</title>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My App Index Page!</h1>
+    </header>
+    <main>
+      <div class="container">
+        <img
+          src="{% static 'images/welcome.jpg' %}"
+          alt="Welcome Image"
+          class="main-img"
+        />
+        <p class="intro-text">
+          This is a sample index page built using Django. You can add your own
+          content, images, and styles here. It’s a simple example to show how to
+          render HTML using a Django view.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
